@@ -11,10 +11,12 @@ spring:
   application:
     name: eurekaclient
     zipkin:
-        base-url: http://localhost:9411
+      #指定 zipkinServer 的地址
+      base-url: http://localhost:9411
     sleuth:
-        sampler:
-            percentage: 1.0
+      sampler:
+        #指定采样请求的百分比（默认为0.1，即10%）
+        percentage: 1.0
 management:
   security:
     #关闭安全验证，否则访问refresh端点时会提示权限不足
