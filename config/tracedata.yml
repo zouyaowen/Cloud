@@ -18,7 +18,7 @@ spring:
         #指定采样请求的百分比（默认为0.1，即10%）
         percentage: 1.0
   rabbitmq:
-    host: localhost
+    host: 172.16.188.16
     port: 5672
     username: guest
     password: guest
